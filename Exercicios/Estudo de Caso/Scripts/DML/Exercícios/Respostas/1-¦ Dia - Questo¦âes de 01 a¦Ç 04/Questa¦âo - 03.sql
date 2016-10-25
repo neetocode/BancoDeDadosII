@@ -26,3 +26,16 @@ dat_fim < '2002-02-28'
 /*--------------------------------------- Com uso de CASE ---------------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
 
+select 
+dsc_camp as Campeonato,
+
+	case
+	when tipo = 'N' then 'Nacional'
+	when tipo = 'R' then 'Regional'
+	when tipo = 'E' then 'Estadual'
+	end
+ as Tipo
+from campeonatos
+where 
+dat_ini > '2002-02-01' or
+dat_fim < '2002-02-28'
