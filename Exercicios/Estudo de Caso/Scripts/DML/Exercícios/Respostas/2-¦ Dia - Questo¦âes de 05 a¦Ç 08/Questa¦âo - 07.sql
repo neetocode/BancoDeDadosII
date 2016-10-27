@@ -16,3 +16,4 @@ where campeonato.tipo = 'R' and datediff(day,campeonato.dat_fim,getdate()) >= 0
 
 select * from jogos
 select * from campeonatos
+select * from participacoes
