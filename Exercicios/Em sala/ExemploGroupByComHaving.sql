@@ -10,7 +10,7 @@ count(*) as 'Quantidade de jogadores',
 max(jogadores.salario) as 'Maior salário',
 avg(jogadores.salario) as 'Média salarial'
 from
-times
-join jogadores on jogadores.cod_time = times.cod_time
+jogadores
 group by jogadores.cod_time
 having sum(jogadores.salario) > 30000
+

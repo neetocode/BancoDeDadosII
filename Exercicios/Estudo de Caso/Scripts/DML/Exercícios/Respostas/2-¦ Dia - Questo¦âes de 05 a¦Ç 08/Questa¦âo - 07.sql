@@ -12,8 +12,3 @@ campeonato.dsc_camp as Nome,
 campeonato.ano as Ano
 from campeonatos as campeonato
 where campeonato.tipo = 'R' and datediff(day,campeonato.dat_fim,getdate()) >= 0
-
-
-select * from jogos
-select * from campeonatos
-select * from participacoes
